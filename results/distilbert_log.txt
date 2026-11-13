@@ -1,0 +1,38 @@
+DistilBERT tokens per training review: median 52, 95th percentile 179, max 1299
+  cut at 128: 11.1% of reviews
+  cut at 192: 4.2% of reviews
+  cut at 256: 2.0% of reviews
+  cut at 512: 0.3% of reviews
+
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  19%|#9        | 19/100 [00:00<00:00, 177.68it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 799.74it/s]
+  seed 42 epoch 1: train loss 0.430, val loss 0.354, acc 0.9369, macro-F1 0.8739, neg-F1 0.7848 [37s]
+  seed 42 epoch 2: train loss 0.197, val loss 0.389, acc 0.9453, macro-F1 0.8873, neg-F1 0.8066 [74s]
+  seed 42 epoch 3: train loss 0.093, val loss 0.666, acc 0.9471, macro-F1 0.8887, neg-F1 0.8081 [111s]
+  seed 42 epoch 4: train loss 0.037, val loss 0.615, acc 0.9471, macro-F1 0.8935, neg-F1 0.8179 [148s]
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  45%|####5     | 45/100 [00:00<00:00, 427.77it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 876.11it/s]
+  seed 43 epoch 1: train loss 0.395, val loss 0.278, acc 0.9369, macro-F1 0.8846, neg-F1 0.8068 [38s]
+  seed 43 epoch 2: train loss 0.205, val loss 0.344, acc 0.9323, macro-F1 0.8786, neg-F1 0.7978 [77s]
+  seed 43 epoch 3: train loss 0.094, val loss 0.507, acc 0.9499, macro-F1 0.8972, neg-F1 0.8235 [113s]
+  seed 43 epoch 4: train loss 0.052, val loss 0.522, acc 0.9499, macro-F1 0.8988, neg-F1 0.8269 [148s]
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  35%|###5      | 35/100 [00:00<00:00, 339.03it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 957.41it/s]
+  seed 44 epoch 1: train loss 0.409, val loss 0.325, acc 0.9323, macro-F1 0.8704, neg-F1 0.7808 [36s]
+  seed 44 epoch 2: train loss 0.218, val loss 0.388, acc 0.9416, macro-F1 0.8816, neg-F1 0.7974 [71s]
+  seed 44 epoch 3: train loss 0.113, val loss 0.472, acc 0.9453, macro-F1 0.8926, neg-F1 0.8173 [107s]
+  seed 44 epoch 4: train loss 0.063, val loss 0.531, acc 0.9462, macro-F1 0.8925, neg-F1 0.8165 [147s]
+
+Per seed:
+ seed  val_accuracy  val_macro_f1  val_neg_f1  val_neg_precision  val_neg_recall  best_epoch  epochs_run  train_seconds  peak_gpu_gb  n_params
+   42        0.9471        0.8935      0.8179             0.8205          0.8153           4           4       148.3352       1.9269  66364418
+   43        0.9499        0.8988      0.8269             0.8323          0.8217           4           4       147.8571       2.1795  66364418
+   44        0.9453        0.8926      0.8173             0.7952          0.8408           3           4       146.7455       2.4307  66364418
+
+Mean +/- std over 3 seeds:
+  val_accuracy       0.9474 +/- 0.0023
+  val_macro_f1       0.8950 +/- 0.0034
+  val_neg_f1         0.8207 +/- 0.0054
+  val_neg_precision  0.8160 +/- 0.0189
+  val_neg_recall     0.8259 +/- 0.0133
+  train seconds      147.6
+  peak GPU           2.43 GB
+  parameters         66,364,418
+Best seed: 43

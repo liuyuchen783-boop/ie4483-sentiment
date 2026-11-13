@@ -1,0 +1,19 @@
+Data cleaning: {'raw_rows': 7401, 'conflicting_rows_dropped': 0, 'repeat_rows_dropped': 219, 'clean_rows': 7182}
+Split: 6104 train (14.6% negative), 1078 validation (14.6% negative)
+
+5-fold cross-validation (mean +/- std):
+  all rows         TF-IDF + Linear SVM           acc 0.9292+/-0.0056  macro-F1 0.8510+/-0.0134  neg-F1 0.7431+/-0.0237
+  all rows         TF-IDF + Logistic Regression  acc 0.9126+/-0.0077  macro-F1 0.8378+/-0.0151  neg-F1 0.7276+/-0.0258
+  repeats removed  TF-IDF + Linear SVM           acc 0.9256+/-0.0066  macro-F1 0.8428+/-0.0130  neg-F1 0.7286+/-0.0224
+  repeats removed  TF-IDF + Logistic Regression  acc 0.9081+/-0.0116  macro-F1 0.8292+/-0.0222  neg-F1 0.7130+/-0.0376
+
+Fixed 85/15 validation split:
+  Always predict positive       acc 0.8544  macro-F1 0.4607  neg-F1 0.0000
+  TF-IDF + Linear SVM           acc 0.9314  macro-F1 0.8508  neg-F1 0.7413  (neg precision 0.822, recall 0.675)  0.49s, 37,543 features
+  TF-IDF + Logistic Regression  acc 0.9230  macro-F1 0.8441  neg-F1 0.7331  (neg precision 0.740, recall 0.726)  0.44s, 37,543 features
+
+Strongest negative terms: not, disappointed, returned, poor, cheap, uncomfortable, bad, return, not buy, apart, terrible, description, are not, the, poorly
+Strongest positive terms: great, comfortable, love, perfect, nice, well, bit, best, this is, excellent, easy, warm, loves, soft, the best
+Negation pairs among the 300 most negative terms: not, not buy, not worth, don, not very, didn, not recommend, not even, not received, not look, don think, not good, don recommend, didn like, not comfortable
+
+Saved results to E:\Year_4_Sem_1\IE4483 Artificial Intelligence & Data Mining\Project\results

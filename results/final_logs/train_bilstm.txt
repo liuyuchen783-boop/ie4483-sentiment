@@ -1,0 +1,42 @@
+Vocabulary: 7,005 entries, from 13,337 distinct training words
+Review tokens: median 42, 95th percentile 145, max 1076; 2.1% cut at 200
+Validation tokens outside the vocabulary (<unk>): 2.9%
+
+  seed 42 epoch  1: train loss 0.558, val loss 0.420, acc 0.8673, macro-F1 0.7672, neg-F1 0.6146
+  seed 42 epoch  2: train loss 0.290, val loss 0.471, acc 0.8933, macro-F1 0.7968, neg-F1 0.6567
+  seed 42 epoch  3: train loss 0.156, val loss 0.655, acc 0.8952, macro-F1 0.7742, neg-F1 0.6090
+  seed 42 epoch  4: train loss 0.098, val loss 0.568, acc 0.8915, macro-F1 0.7932, neg-F1 0.6507
+  seed 42 epoch  5: train loss 0.054, val loss 0.826, acc 0.8766, macro-F1 0.7705, neg-F1 0.6145
+  seed 42 epoch  6: train loss 0.029, val loss 0.863, acc 0.8868, macro-F1 0.7817, neg-F1 0.6303
+  seed 43 epoch  1: train loss 0.563, val loss 0.469, acc 0.7263, macro-F1 0.6540, neg-F1 0.4957
+  seed 43 epoch  2: train loss 0.277, val loss 0.358, acc 0.8451, macro-F1 0.7579, neg-F1 0.6125
+  seed 43 epoch  3: train loss 0.159, val loss 0.585, acc 0.8831, macro-F1 0.7861, neg-F1 0.6420
+  seed 43 epoch  4: train loss 0.082, val loss 0.765, acc 0.8952, macro-F1 0.7899, neg-F1 0.6413
+  seed 43 epoch  5: train loss 0.054, val loss 0.812, acc 0.9007, macro-F1 0.8042, neg-F1 0.6667
+  seed 43 epoch  6: train loss 0.036, val loss 0.965, acc 0.9035, macro-F1 0.7952, neg-F1 0.6463
+  seed 43 epoch  7: train loss 0.019, val loss 0.992, acc 0.8952, macro-F1 0.7899, neg-F1 0.6413
+  seed 43 epoch  8: train loss 0.012, val loss 1.720, acc 0.8980, macro-F1 0.7743, neg-F1 0.6071
+  seed 43 epoch  9: train loss 0.009, val loss 2.160, acc 0.9035, macro-F1 0.7647, neg-F1 0.5840
+  seed 44 epoch  1: train loss 0.533, val loss 0.455, acc 0.8766, macro-F1 0.7747, neg-F1 0.6232
+  seed 44 epoch  2: train loss 0.267, val loss 0.415, acc 0.8961, macro-F1 0.8133, neg-F1 0.6889
+  seed 44 epoch  3: train loss 0.153, val loss 0.638, acc 0.8952, macro-F1 0.7899, neg-F1 0.6413
+  seed 44 epoch  4: train loss 0.087, val loss 0.828, acc 0.9017, macro-F1 0.7959, neg-F1 0.6490
+  seed 44 epoch  5: train loss 0.058, val loss 0.744, acc 0.8878, macro-F1 0.7872, neg-F1 0.6409
+  seed 44 epoch  6: train loss 0.033, val loss 0.856, acc 0.8980, macro-F1 0.7961, neg-F1 0.6519
+
+Per seed:
+ seed  val_accuracy  val_macro_f1  val_neg_f1  val_neg_precision  val_neg_recall  best_epoch  epochs_run  train_seconds  peak_gpu_gb  n_params
+   42        0.8933        0.7968      0.6567             0.6180          0.7006           2           6        37.7507       0.0834   1161858
+   43        0.9007        0.8042      0.6667             0.6524          0.6815           5           9        59.1015       0.0843   1161858
+   44        0.8961        0.8133      0.6889             0.6108          0.7898           2           6        42.6720       0.0843   1161858
+
+Mean +/- std over 3 seeds:
+  val_accuracy       0.8967 +/- 0.0037
+  val_macro_f1       0.8047 +/- 0.0083
+  val_neg_f1         0.6708 +/- 0.0165
+  val_neg_precision  0.6271 +/- 0.0222
+  val_neg_recall     0.7240 +/- 0.0578
+  train seconds      46.5
+  peak GPU           0.08 GB
+  parameters         1,161,858
+Best seed: 44

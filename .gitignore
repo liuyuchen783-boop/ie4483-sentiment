@@ -1,0 +1,25 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+.gradio/
+
+# Trained models (over GitHub's 100 MB limit; recreate them with the training scripts)
+models/
+*.pt
+
+# Course-provided material (not ours to redistribute)
+train.json
+test.json
+IE4483-Project1.pdf
+tfidf_features_example.html
+tfidf_features_example.ipynb
+
+# Backup copy of the code that is already in this repo
+IE4483_code.zip
+
+# Files that contain full review text from the course data
+submission.csv
+error_analysis.csv
+results/test_predictions.csv
+results/val_predictions/

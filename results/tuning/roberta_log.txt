@@ -1,0 +1,13 @@
+roberta: 5 configurations x 3 seeds = 15 runs
+roberta lr=1e-05 seed 42: macro-F1 0.9201, neg-F1 0.8635, 321s
+roberta lr=1e-05 seed 43: macro-F1 0.9209, neg-F1 0.8645, 326s
+roberta lr=1e-05 seed 44: macro-F1 0.9234, neg-F1 0.8690, 330s
+roberta lr=3e-05 seed 42: macro-F1 0.9191, neg-F1 0.8609, 332s
+roberta lr=3e-05 seed 43: macro-F1 0.9229, neg-F1 0.8688, 328s
+roberta lr=3e-05 seed 44: macro-F1 0.9226, neg-F1 0.8673, 336s
+roberta epochs=2 seed 42: macro-F1 0.9083, neg-F1 0.8438, 170s
+roberta epochs=2 seed 43: macro-F1 0.9103, neg-F1 0.8474, 168s
+roberta epochs=2 seed 44: macro-F1 0.9209, neg-F1 0.8645, 169s
+roberta epochs=3 seed 42: macro-F1 0.9301, neg-F1 0.8803, 248s
+roberta epochs=3 seed 43: macro-F1 0.9246, neg-F1 0.8710, 254s
+roberta epochs=3 seed 44: macro-F1 0.9234, neg-F1 0.8684, 251s

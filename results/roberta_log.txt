@@ -1,0 +1,39 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+RoBERTa tokens per training review: median 53, 95th percentile 180, max 1278
+  cut at 128: 11.3% of reviews
+  cut at 192: 4.2% of reviews
+  cut at 256: 2.1% of reviews
+  cut at 512: 0.4% of reviews
+
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   9%|9         | 18/197 [00:00<00:01, 145.40it/s]Loading weights:  18%|#7        | 35/197 [00:00<00:01, 152.14it/s]Loading weights:  32%|###1      | 63/197 [00:00<00:00, 198.34it/s]Loading weights: 100%|##########| 197/197 [00:00<00:00, 572.70it/s]
+  seed 42 epoch 1: train loss 0.459, val loss 0.233, acc 0.9490, macro-F1 0.8983, neg-F1 0.8265 [76s]
+  seed 42 epoch 2: train loss 0.231, val loss 0.407, acc 0.9573, macro-F1 0.9109, neg-F1 0.8467 [159s]
+  seed 42 epoch 3: train loss 0.124, val loss 0.531, acc 0.9601, macro-F1 0.9192, neg-F1 0.8617 [245s]
+  seed 42 epoch 4: train loss 0.072, val loss 0.517, acc 0.9620, macro-F1 0.9230, neg-F1 0.8682 [332s]
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   8%|8         | 16/197 [00:00<00:01, 143.85it/s]Loading weights:  16%|#5        | 31/197 [00:00<00:02, 65.17it/s] Loading weights:  20%|##        | 40/197 [00:00<00:02, 70.79it/s]Loading weights:  35%|###5      | 69/197 [00:00<00:00, 129.77it/s]Loading weights: 100%|##########| 197/197 [00:00<00:00, 284.77it/s]
+  seed 43 epoch 1: train loss 0.428, val loss 0.418, acc 0.9471, macro-F1 0.8967, neg-F1 0.8246 [79s]
+  seed 43 epoch 2: train loss 0.217, val loss 0.401, acc 0.9564, macro-F1 0.9149, neg-F1 0.8554 [153s]
+  seed 43 epoch 3: train loss 0.134, val loss 0.566, acc 0.9629, macro-F1 0.9221, neg-F1 0.8658 [219s]
+  seed 43 epoch 4: train loss 0.069, val loss 0.572, acc 0.9601, macro-F1 0.9174, neg-F1 0.8581 [293s]
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  11%|#         | 21/197 [00:00<00:01, 165.10it/s]Loading weights:  19%|#9        | 38/197 [00:00<00:01, 81.52it/s] Loading weights:  25%|##4       | 49/197 [00:00<00:01, 78.47it/s]Loading weights:  35%|###5      | 69/197 [00:00<00:01, 107.61it/s]Loading weights: 100%|##########| 197/197 [00:00<00:00, 253.82it/s]
+  seed 44 epoch 1: train loss 0.444, val loss 0.352, acc 0.9499, macro-F1 0.8999, neg-F1 0.8291 [77s]
+  seed 44 epoch 2: train loss 0.240, val loss 0.357, acc 0.9545, macro-F1 0.9099, neg-F1 0.8464 [154s]
+  seed 44 epoch 3: train loss 0.134, val loss 0.424, acc 0.9536, macro-F1 0.9092, neg-F1 0.8457 [232s]
+  seed 44 epoch 4: train loss 0.075, val loss 0.506, acc 0.9583, macro-F1 0.9155, neg-F1 0.8553 [309s]
+
+Per seed:
+ seed  val_accuracy  val_macro_f1  val_neg_f1  val_neg_precision  val_neg_recall  best_epoch  epochs_run  train_seconds  peak_gpu_gb  n_params
+   42        0.9620        0.9230      0.8682             0.8766          0.8599           4           4       331.7398       3.2151 124056578
+   43        0.9629        0.9221      0.8658             0.9149          0.8217           3           4       293.4593       5.0722 124056578
+   44        0.9583        0.9155      0.8553             0.8636          0.8471           4           4       308.7450       3.2269 124056578
+
+Mean +/- std over 3 seeds:
+  val_accuracy       0.9610 +/- 0.0025
+  val_macro_f1       0.9202 +/- 0.0041
+  val_neg_f1         0.8631 +/- 0.0068
+  val_neg_precision  0.8851 +/- 0.0266
+  val_neg_recall     0.8429 +/- 0.0195
+  train seconds      311.3
+  peak GPU           5.07 GB
+  parameters         124,056,578
+Best seed: 42
